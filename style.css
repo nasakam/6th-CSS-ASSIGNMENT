@@ -1,0 +1,139 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(38,38,38);
+    margin: auto;    
+}
+
+.test-border{
+    border: solid black 1px;
+}
+
+.container{
+    margin: auto;
+    background-color: rgb(233,233,233);
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: 2fr 7fr 2fr;
+    grid-template-rows: 35px;
+    grid-template-areas: "gapleft menu gapright";
+    background-color: rgb(38,38,38);
+}
+
+.nav1{
+    grid-area: gapleft;
+}
+.nav2{
+    display: flex;
+    align-items: center;
+}
+.nav3{
+    grid-area: gapright;
+}
+
+.flow{
+    display: grid;
+    grid-template-columns: 2fr 7fr 2fr;
+    grid-template-areas: "gapleft1 article gapright1";
+    grid-template-rows: auto;
+}
+
+.leftside{
+    grid-area: gapleft1;
+    background-color: rgb(230, 230, 230);
+}
+
+.middle{
+    grid-area: article;    
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: white;
+}
+
+.rightside{
+    grid-area: gapright1;
+    background-color: rgb(230, 230, 230);
+}
+
+ul{
+    display: inline-flex;
+    grid-area: menu;
+    align-items: center;
+    justify-content: space-between;
+	list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+.navbar a{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(214,214,214);
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.details{
+    color: rgb(210, 210, 210);
+}
+
+.fontweight{
+    font-weight:bold;
+    font-size: 15px;
+    color: rgb(63, 62, 62);
+}
+
+.move{
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 0px;
+}
+
+.move a{
+    color: rgb(15,143,207);
+    text-decoration: none;
+}
+
+.move a:hover{
+    text-decoration: underline;
+}
+
+.begin{
+    font-size: 14px;
+    color: rgb(80, 75, 75);
+}
+
+.middle{
+    box-shadow: 0 0 1px 1px rgb(205, 205, 205);
+}
+.upper-middle{    
+    margin: 60px 80px 40px 80px;
+}
+
+.center-middle{
+    margin: 50px 180px 0px 180px;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.center-middle h4{
+    margin-bottom: 10px;
+}
+
+.center-middle > span{
+    font-size: 13px;
+    color: rgb(181,181,181);
+}
+
+.foot{
+    text-align: center;
+    font-family: sans-serif;
+    margin: 40px 100px 40px 100px;
+}
